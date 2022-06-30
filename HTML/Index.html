@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../Imagenes/clipart1433951.png">
+    <link rel="stylesheet" href="../CSS/Diseño.css">
+    
+    <title>Sismologia</title>
+</head>
+<body class="Fondo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="../HTML/Index.html"><img src="../Imagenes/clipart1433951.png"  width="150" height="150"></a>
+        <button class="navbar-toggler" type="button">
+         
+        </button>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" >Menu</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../HTML/Index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/Sistema_alerta.html">Sistema Alerta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/Contacto.html">Contacto</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <img class="foto" src="../Imagenes/c22_22415051.jpg"/>
+
+    <h3 id="titulo"><b>Dashboard</b></h3>
+
+    <div class="acordeon">
+     
+      <div class="container-fluid py-4">
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+          <div class="card-header p-3 pt-2">
+          <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
+          
+          </div>
+          <div class="text-end pt-1">
+           
+          <h4 class="mb-0">Ultimos sismos</h4>
+          </div>
+          </div>
+          <hr class="dark horizontal my-0">
+          <div class="card-footer p-3">
+          <button id="Mundo"><p class="mb-0">Info</p></button>
+          </div>
+          </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+          <div class="card-header p-3 pt-2">
+          <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
+          
+          </div>
+          <div class="text-end pt-1">
+          <h4 class="mb-0">Tsunami</h4>
+          </div>
+          </div>
+          <hr class="dark horizontal my-0">
+          <div class="card-footer p-3">
+          <button id="tsunami"><p class="mb-0">Info</p></button>
+          </div>
+          </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+          <div class="card-header p-3 pt-2">
+          <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+         
+          </div>
+          <div class="text-end pt-1">
+        
+          <h4 class="mb-0">Onemi</h4>
+          </div>
+          </div>
+          <hr class="dark horizontal my-0">
+          <div class="card-footer p-3">
+          <button id="Onemi"><p class="mb-0">Info</p></button>
+          </div>
+          </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+          <div class="card">
+          <div class="card-header p-3 pt-2">
+          <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
+          
+          </div>
+          <div class="text-end pt-1">
+          
+          <h4 class="mb-0">Últimos 15 sismos</h4>
+          </div>
+          </div>
+          <hr class="dark horizontal my-0">
+          <div class="card-footer p-3">
+          <button id="Boton15S"><p class="mb-0">Info</p></button>
+          <table id="categorias" ></table>
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <table id="ultimos15chile" class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Ubicación</th>
+                <th scope="col">Magnitud</th>
+                <th scope="col">Latitud</th>
+                <th scope="col">Longitud</th>
+                <th scope="col">Hora</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               
+                <td>18 km al E de La Higuera</td>
+                <td>3.7</td>
+                <td>-29.452</td>
+                <td>-71.028</td>
+                <td>2021/03/15 16:42:59</td>
+              
+            </tbody>
+          </table>
+
+          <table id="onemi" class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Titulo</th>
+                <th scope="col">Region en Alerta</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               
+                <td>Monitoreo Alerta Amarilla para las comunas de Coelemu y Trehuaco por inundación</td>
+                <td>Ñuble</td>
+                <td>11/03/2021 | 15:15</td>
+                <td>http://www.onemi.clhttps://www.onemi.gov.cl/alerta/alerta-amarilla-para-las-comunas-de-coelemu-y-trehuaco-por-inundacion</td>
+               
+              
+            </tbody>
+          </table>
+
+          <table id="Tsunami" class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Ubicación</th>
+                <th scope="col">Magnitud</th>
+                <th scope="col">Latitud</th>
+                <th scope="col">Longitud</th>
+                <th scope="col">Hora</th>
+              </tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               
+                <td>1169 KM AL NE DE AUCKLAND - NUEVA ZELANDA</td>
+                <td>8.1</td>
+                <td>-29.36</td>
+                <td>-176</td>
+                <td>04/03/2021 16:28</td>
+               
+              
+            </tbody>
+          </table>
+
+
+          <table id="mundosismo" class="table table-hover" >
+            <thead>
+              <tr>
+                <th scope="col">Ubicación</th>
+                <th scope="col">Magnitud</th>
+                <th scope="col">Latitud</th>
+                <th scope="col">Longitud</th>
+                <th scope="col">Hora</th>
+              </tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               
+                <td>123 km al E de Manado - Indonesia</td>
+                <td>4.5</td>
+                <td>1.4198</td>
+                <td>125.9558</td>
+                <td>2022/06/30 04:57:43</td>
+               
+              
+            </tbody>
+          </table>
+          
+  
+  
+  
+  
+      </div>
+
+    </div>
+    
+
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>Magnitud (MAG):
+  Las magnitudes de los terremotos son reportados usando una escala logarítmica, que mide la fortaleza y la energía del terremoto y que es determinada por observaciones sismográficas .
+  
+  Generalmente magnitudes son entre 0 y 10. Terremotos en el rango de 0 hasta 4 pasan con relativa frecuencia en el mundo, más de ~M6 se consideran importante, y más de ~M8 son raros y pueden ser destructivos. Pero cualquier terremoto puede ser destructivo si sucede en un lugar poblado o vulnerable. Igualmente, terremotos grandes pueden ocurrir en sitios remotos sin destrucción. Terremotos en cualquier lugar en o cerca del mar, pueden causar tsunamis.
+  
+  Ésta lista solomente reporta terremotos de magnitud ~4 y mas grande. La razón es que partes del mundo son mejor cubiertas por sismografos, y no queremos representar que aquellas regiones en realidad son más activas sísmicamente. Pero al llegar al mapa, sigiuendo los enlaces, se puede establecer un rango de magnitud diferente.</p>
+<script>
+ 
+        
+        
+ $(document).ready(function(){
+  $("#Boton15S").click(function(){
+    $("#ultimos15chile").slideToggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#Onemi").click(function(){
+    $("#onemi").slideToggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#tsunami").click(function(){
+    $("#Tsunami").slideToggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#Mundo").click(function(){
+    $("#mundosismo").slideToggle();
+  });
+});
+
+</script>
+
+
+    
+</body>
+</html>
